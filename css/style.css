@@ -340,18 +340,25 @@ p {
 	width: 50%;
 	height: 500px;
 	position: relative;
+	right: 398px;
 }
 
 .reviews_img {
-	position: absolute;
+/*	position: relative;
 	top: 50%;
-	right: 0;
+	left: 0;*/
 	z-index: 1;
 
 	transform: translateY(-50%);
 }
 .reviews_content {
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding-left: 80px;
+	/*z-index: 2;*/
 
 }
 
@@ -360,5 +367,13 @@ p {
 	font-style: italic;
 	font-size: 36px;
 	line-height: 1.2em;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.reviews_author {
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
 	color: #fff;
 }
