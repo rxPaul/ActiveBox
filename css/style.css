@@ -34,9 +34,12 @@ p {
 
 .header {
 	width: 100%;
-	background: #30344e url('../img/intro-bg.jpg') no-repeat center top/ cover;	color: #fff;
+	background: #30344e url('../img/intro-bg.jpg') no-repeat center center;	
+	color: #fff;
+	background-size: cover;
 	padding-top: 30px;
-	/*padding-bottom: 30px;*/
+	justify-content: center;
+
 }
 
 .header__inner {
@@ -78,19 +81,25 @@ p {
 	margin-left: 0;
 }
 
+/*Burger=========================================*/
+
+.burger {
+	display: none;
+}
+
 /*Intro==========================================*/
 
 .intro {
 	display: flex;
-	/*flex-direction: column;*/
+	flex-direction: column;
 	margin-top: 156px;
-	/*justify-content: center;*/
+	justify-content: center;
+	align-items: center;
 
 }
 
 .intro__inner {
 	width: 100%;
-	min-width: 970px;
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -121,6 +130,7 @@ p {
 .btn {
 	display: inline-block;
 	font-style: 'Raleway', semi-bold;
+	position: relative;
 	font-size: 13px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -492,3 +502,58 @@ p {
 .share_item:hover {
 	border: 1px solid #fff;
 	}
+
+/*Media=====*/
+
+@media (max-width: 1000px) {
+
+	.intro_title {
+		font-size: 40px;
+		text-align: center
+	}
+
+	.intro__subtitle {
+		font-size: 16px;
+	}
+	.nav {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		text-transform: uppercase;
+	}
+
+	.reviews_photo {
+		right: 450px;
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	.reviews_photo {
+		right: 530px;
+	}
+}
+
+@media (max-width: 770px) {
+
+	.intro {
+		margin-top: 80px;
+	}
+
+	.intro__inner {
+		margin-bottom: 0;
+	}
+	.intro_title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.btn {
+		margin: 70px 0;
+	}
+
+
+	
